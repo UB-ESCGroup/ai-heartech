@@ -1,0 +1,41 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'AI for HearTech'
+
+# Theme configuration using Hugo modules (recommended approach)
+[[module.imports]]
+path = "github.com/willfaught/paige"
+
+# Syntax highlighting
+[markup.highlight]
+noclasses = false
+style = "github"
+
+# Site parameters
+[params]
+  description = "Artificial Intelligence for Hearing Technology"
+  author = "UB-ESCGroup"
+  # Uncomment to enable GitHub social link
+  github = "https://github.com/UB-ESCGroup/ai-heartech"
+  
+# Menu configuration
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+    
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 30
+    
+  # GitHub menu item removed as it's now in the social links
