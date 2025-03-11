@@ -13,7 +13,7 @@ Our second Audiology Workshop featured a comprehensive presentation by Rania A. 
 
 Rania provided an educational foundation on ear anatomy and the hearing process, explaining how sound waves travel through the outer, middle, and inner ear before being converted to electrical signals that reach the brain.
 
-{{< figure src="<https://ub-escgroup.github.io/ai-heartech/images/ear_anatomy.png>" title="Anatomy of the Ear Showing Outer, Middle, and Inner Components" width="100%" >}}
+{{< figure src="https://ub-escgroup.github.io/ai-heartech/images/ear_anatomy.png" title="Anatomy of the Ear Showing Outer, Middle, and Inner Components" width="100%" >}}
 
 The presentation covered key concepts in audiology, including:
 
@@ -22,7 +22,7 @@ The presentation covered key concepts in audiology, including:
 - Objective and subjective assessment methods
 - Interpretation of audiograms
 
-{{< figure src="<https://ub-escgroup.github.io/ai-heartech/images/audiogram_types.png>" title="Types of Audiogram Configurations and Their Clinical Implications" width="100%" >}}
+{{< figure src="https://ub-escgroup.github.io/ai-heartech/images/audiogram_types.png" title="Types of Audiogram Configurations and Their Clinical Implications" width="100%" >}}
 
 ## Diagnostic Testing Procedures
 
@@ -34,7 +34,7 @@ Rania detailed several diagnostic procedures that are standard in clinical pract
 - **Otoacoustic Emissions (OAE)**: Measuring sounds produced by outer hair cells in the cochlea
 - **Auditory Brainstem Response (ABR)**: Recording brain wave activity in response to sound
 
-{{< figure src="<https://ub-escgroup.github.io/ai-heartech/images/otoscopy.png>" title="Otoscopic Examination" width="100%" >}}
+{{< figure src="https://ub-escgroup.github.io/ai-heartech/images/otoscopy.png" title="Otoscopic Examination" width="100%" >}}
 
 ## Discussion: AI Applications in Audiology
 

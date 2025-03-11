@@ -541,3 +541,6 @@ style = "github"
 [params.paige.pages]
   disable_breadcrumbs = true
   disable_toc = false  # Medium doesn't have TOC, but it's useful for longer articles
+
+[markup.goldmark.renderer]
+unsafe = true  # Allows raw HTML in content
