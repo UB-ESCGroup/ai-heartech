@@ -18,6 +18,488 @@ style = "github"
   # Uncomment to enable GitHub social link
   github = "https://github.com/UB-ESCGroup/ai-heartech"
   
+# Paige theme specific parameters
+[params.paige]
+  # Custom CSS for Medium-like appearance with forced left alignment
+  style = """
+  /* Typography and base styles */
+  body {
+    font-family: 'Charter', 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: -0.004em;
+    color: rgba(41, 41, 41, 1);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Force left alignment for all content */
+  body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, article, section, header, footer, main, aside, nav {
+    text-align: left !important;
+  }
+  
+  /* Ensure all containers are left-aligned */
+  .container, .container-fluid, .row, .col, [class^="col-"] {
+    text-align: left !important;
+  }
+  
+  /* Ensure all Bootstrap classes are overridden */
+  .text-center, .text-right, .text-justify {
+    text-align: left !important;
+  }
+  
+  /* Heading styles - make them more distinct from regular links */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    margin-top: 2em !important;
+    margin-bottom: 0.7em !important;
+    letter-spacing: -0.02em !important;
+    text-align: left !important;
+    color: #222 !important;
+    border-bottom: none !important;
+  }
+  
+  /* Ensure headings don't look like links */
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #222 !important;
+    border-bottom: none !important;
+    transition: color 0.2s ease !important;
+  }
+  
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #1a73e8 !important;
+    border-bottom: none !important;
+  }
+  
+  h1 {
+    font-size: 2.5em !important;
+    line-height: 1.2 !important;
+    margin-top: 0.8em !important;
+  }
+  
+  h2 {
+    font-size: 2em !important;
+    line-height: 1.3 !important;
+    padding-bottom: 0.3em !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  h3 {
+    font-size: 1.6em !important;
+    margin-top: 1.8em !important;
+  }
+  
+  h4 {
+    font-size: 1.3em !important;
+  }
+  
+  h5 {
+    font-size: 1.1em !important;
+  }
+  
+  h6 {
+    font-size: 1em !important;
+    color: #555 !important;
+  }
+  
+  /* Content layout and alignment */
+  #paige-page-content {
+    text-align: left !important;
+  }
+  
+  #paige-page-content > * {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    max-width: 42rem !important;
+    padding: 0 1rem !important;
+    text-align: left !important;
+  }
+  
+  /* Paragraph spacing and alignment */
+  p {
+    margin-bottom: 1.5em !important;
+    text-align: left !important;
+  }
+  
+  /* Links styling - changed from mint green to professional blue */
+  a {
+    color: #1a73e8 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(26, 115, 232, 0.3) !important;
+    transition: border-color 0.15s ease-in-out, color 0.15s ease-in-out !important;
+  }
+  
+  a:hover {
+    color: #0d47a1 !important;
+    border-bottom-color: rgba(13, 71, 161, 0.8) !important;
+  }
+  
+  /* Medium-style figure caption styling - adjusted size to match Medium */
+  figcaption,
+  .figcaption,
+  figure figcaption,
+  .figure figcaption,
+  .figure-caption,
+  .wp-caption-text,
+  .caption,
+  .paige-shortcode-figure figcaption,
+  figure .title,
+  .figure .title,
+  [class*="figure"] [class*="caption"],
+  [class*="figure"] [class*="title"],
+  [class*="fig"] [class*="caption"],
+  [class*="fig"] [class*="title"] {
+    font-size: 14px !important;
+    color: rgba(117, 117, 117, 1) !important;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0 !important;
+    border-bottom: none !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    font-style: normal !important;
+  }
+  
+  /* Table of Contents (TOC) styling */
+  #paige-page-toc {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  #paige-page-toc h2 {
+    font-size: 1.2rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    color: #333 !important;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+  
+  #paige-page-toc ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  #paige-page-toc ul ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  #paige-page-toc li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  #paige-page-toc a {
+    display: block;
+    padding: 0.3rem 0;
+    color: #555 !important;
+    border-bottom: none !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+  }
+  
+  #paige-page-toc a:hover {
+    color: #1a73e8 !important;
+    padding-left: 0.3rem;
+    background-color: rgba(26, 115, 232, 0.05);
+    border-radius: 3px;
+  }
+  
+  /* Navigation menu styling */
+  #paige-site-menu {
+    margin: 1rem 0;
+  }
+  
+  #paige-site-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+  }
+  
+  #paige-site-menu li {
+    margin: 0;
+  }
+  
+  #paige-site-menu a {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333 !important;
+    text-decoration: none !important;
+    border: none !important;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+  
+  #paige-site-menu a:hover {
+    color: #1a73e8 !important;
+  }
+  
+  #paige-site-menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1a73e8;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  #paige-site-menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  /* Active menu item */
+  #paige-site-menu a.active {
+    color: #1a73e8 !important;
+    font-weight: 600;
+  }
+  
+  #paige-site-menu a.active::after {
+    transform: scaleX(1);
+  }
+  
+  /* Blockquote styling like Medium */
+  blockquote {
+    border-left: 3px solid rgba(41, 41, 41, 0.8);
+    padding-left: 20px;
+    margin-left: 0;
+    font-style: italic;
+    color: rgba(41, 41, 41, 0.8);
+    text-align: left !important;
+  }
+  
+  /* Code blocks */
+  pre, code {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+  }
+  
+  pre {
+    padding: 1em;
+    overflow-x: auto;
+    text-align: left !important;
+  }
+  
+  code {
+    padding: 0.2em 0.4em;
+  }
+  
+  /* Images and figures */
+  #paige-page-content > img,
+  #paige-page-content > figure,
+  #paige-page-content > .paige-shortcode-image,
+  #paige-page-content > .paige-shortcode-vimeo,
+  #paige-page-content > .paige-shortcode-youtube {
+    max-width: 100%;
+    margin: 2em 0 !important; /* Left-aligned margin */
+  }
+  
+  figure {
+    margin-left: 0 !important;
+    text-align: left !important;
+  }
+  
+  /* Header styling */
+  #paige-site-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    text-align: left !important;
+  }
+  
+  #paige-site-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: left !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  #paige-site-title a {
+    color: #333 !important;
+    border-bottom: none !important;
+  }
+  
+  #paige-site-title a:hover {
+    color: #1a73e8 !important;
+  }
+  
+  /* Page metadata styling */
+  #paige-page-date {
+    color: rgba(41, 41, 41, 0.6);
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    text-align: left !important;
+  }
+  
+  /* Footer styling */
+  #paige-site-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    color: rgba(41, 41, 41, 0.6);
+    font-size: 0.9em;
+    text-align: left !important;
+  }
+  
+  /* Lists alignment */
+  ul, ol {
+    text-align: left !important;
+    padding-left: 2em;
+  }
+  
+  li {
+    text-align: left !important;
+  }
+  
+  /* Table alignment */
+  table {
+    text-align: left !important;
+  }
+  
+  th, td {
+    text-align: left !important;
+  }
+  
+  /* Dark mode adjustments */
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: rgba(255, 255, 255, 0.9);
+      background-color: #121212;
+    }
+    
+    /* Dark mode heading styles */
+    h1, h2, h3, h4, h5, h6 {
+      color: rgba(255, 255, 255, 0.95) !important;
+    }
+    
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+      color: rgba(255, 255, 255, 0.95) !important;
+    }
+    
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+      color: #8ab4f8 !important;
+    }
+    
+    h2 {
+      border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    h6 {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
+    a {
+      color: #8ab4f8 !important;
+      border-bottom-color: rgba(138, 180, 248, 0.3) !important;
+    }
+    
+    a:hover {
+      color: #aecbfa !important;
+      border-bottom-color: rgba(174, 203, 250, 0.8) !important;
+    }
+    
+    /* Dark mode figure caption */
+    figcaption,
+    .figcaption,
+    figure figcaption,
+    .figure figcaption,
+    .figure-caption,
+    .wp-caption-text,
+    .caption,
+    .paige-shortcode-figure figcaption,
+    figure .title,
+    .figure .title,
+    [class*="figure"] [class*="caption"],
+    [class*="figure"] [class*="title"],
+    [class*="fig"] [class*="caption"],
+    [class*="fig"] [class*="title"] {
+      color: rgba(180, 180, 180, 1) !important;
+    }
+    
+    /* Dark mode TOC styling */
+    #paige-page-toc {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+    }
+    
+    #paige-page-toc h2 {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+    
+    #paige-page-toc a {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
+    #paige-page-toc a:hover {
+      color: #8ab4f8 !important;
+      background-color: rgba(138, 180, 248, 0.1);
+    }
+    
+    #paige-site-menu a {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+    
+    #paige-site-menu a:hover,
+    #paige-site-menu a.active {
+      color: #8ab4f8 !important;
+    }
+    
+    #paige-site-menu a::after {
+      background-color: #8ab4f8;
+    }
+    
+    #paige-site-title a {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+    
+    #paige-site-title a:hover {
+      color: #8ab4f8 !important;
+    }
+    
+    blockquote {
+      border-left-color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    pre, code {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    #paige-site-header {
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    #paige-site-footer {
+      border-top-color: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+    }
+    
+    #paige-page-date {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  """
+  
 # Menu configuration
 [menu]
   [[menu.main]]
@@ -39,3 +521,8 @@ style = "github"
     weight = 30
     
   # GitHub menu item removed as it's now in the social links
+
+# Paige page parameters - for a more minimal Medium-like experience
+[params.paige.pages]
+  disable_breadcrumbs = true
+  disable_toc = false  # Medium doesn't have TOC, but it's useful for longer articles
