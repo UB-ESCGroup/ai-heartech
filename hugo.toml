@@ -164,6 +164,21 @@ style = "github"
     font-style: normal !important;
   }
   
+  /* Make images display properly */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+  
+  /* Fix figure shortcode images */
+  figure img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
   /* Table of Contents (TOC) styling */
   #paige-page-toc {
     background-color: #f8f9fa;
