@@ -48,12 +48,22 @@ jobs:
           hugo-version: '0.145.0'
           extended: true
 
+      - name: Install Dart Sass
+        run: |
+          echo "Installing Dart Sass..."
+          DART_SASS_VERSION=1.72.0
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          tar -xf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          echo "$(pwd)/dart-sass" >> $GITHUB_PATH
+
       - name: Build
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          # Verify Dart Sass is available
+          sass --version
           hugo --minify
 
       - name: Upload artifact
