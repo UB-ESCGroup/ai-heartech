@@ -90,7 +90,7 @@ The presentation sparked rich discussion about potential applications in audiolo
 
 ### Tinnitus Treatment System
 
-Wei Sun proposed developing a comprehensive tinnitus management system incorporating:
+Dr. Wei Sun proposed developing a comprehensive tinnitus management system incorporating:
 - Matching algorithms to characterize individual tinnitus profiles
 - Adaptive sound generation using reinforcement learning
 - Monitoring tools to track treatment efficacy

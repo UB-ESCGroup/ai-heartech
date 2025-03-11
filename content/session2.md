@@ -54,7 +54,7 @@ Participants discussed how AI tools could assist in parsing and analyzing audiog
 
 ### Personalized Sound Therapy
 
-Wei Sun suggested that AI could analyze large datasets to identify effective sound therapy approaches for different populations, and even personalize treatments for individual tinnitus patients based on their specific auditory profiles.
+Dr. Wei Sun suggested that AI could analyze large datasets to identify effective sound therapy approaches for different populations, and even personalize treatments for individual tinnitus patients based on their specific auditory profiles.
 
 ## Future Directions
 
