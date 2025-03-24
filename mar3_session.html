@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Physical Systems: Applications in Audiology and Smart Health - AI for HearTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">AI for HearTech</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#resources">Resources</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Cyber Physical Systems: Applications in Audiology and Smart Health</h1>
+            <p>March 3, 2025 - Presented by Alexander Gheardi</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="session-details">
+            <div><strong>Date:</strong> March 3, 2025</div>
+            <div><strong>Presenter:</strong> Alexander Gheardi</div>
+            <div><strong>Affiliation:</strong> First Year PhD Student, Department of Computer Science and Engineering, University at Buffalo</div>
+            <div><strong>Topic:</strong> Cyber Physical Systems in Smart Health</div>
+        </div>
+        
+        <div class="session-container">
+            <div class="session-section">
+                <h2>Session Overview</h2>
+                <p>Our third Audiology Workshop featured Alexander Gheardi presenting on Cyber Physical Systems (CPS) with a focus on smart health applications in audiology. This session explored the integration of physical sensors with AI techniques, emphasizing the complete pipeline from data collection to inference in health-related contexts.</p>
+                
+                <div class="figure">
+                    <img src="https://ub-escgroup.github.io/ai-heartech/images/cyber_physical_systems_header.jpg" alt="Cyber Physical Systems Overview">
+                    <figcaption>Integration of Physical Sensors with AI for Smart Health Applications</figcaption>
+                </div>
+            </div>
+            
+            <div class="session-section">
+                <h2>Anatomy of Smart Health Systems</h2>
+                <p>Alexander introduced the fundamental components of cyber physical systems, highlighting their critical role in modern healthcare applications. A complete smart health system consists of four key elements:</p>
+                
+                <div class="figure">
+                    <img src="https://ub-escgroup.github.io/ai-heartech/images/cps_anatomy.png" alt="Smart Health System Anatomy">
+                    <figcaption>Anatomy of a Smart Health System</figcaption>
+                </div>
+                
+                <ol>
+                    <li><strong>Physical Sensors</strong>: Devices that capture physiological or environmental data</li>
+                    <li><strong>Data Preprocessing</strong>: Filtering and cleaning techniques to enhance signal quality</li>
+                    <li><strong>Feature/Domain Extraction</strong>: Transformation of raw data into meaningful representations</li>
+                    <li><strong>Inference</strong>: AI models that interpret the features to make predictions or classifications</li>
+                </ol>
+                
+                <p>To illustrate this framework, Alexander demonstrated how a simple optical system using a green LED and photodiode can establish a relationship between photoplethysmography (PPG) signals and cardiac arrhythmia through appropriate preprocessing and AI techniques.</p>
+            </div>
+            
+            <div class="session-section">
+                <h2>Sensing Modalities for Health Applications</h2>
+                <p>The presentation covered various sensing modalities applicable to audiology and broader health monitoring:</p>
+                
+                <ul>
+                    <li><strong>Acoustic</strong>: Active or passive spectrogram analysis</li>
+                    <li><strong>Optical</strong>: LED/laser-based measurements or camera imaging</li>
+                    <li><strong>Electrical</strong>: Impedance, EEG, ECG, EOG, EMG measurements</li>
+                    <li><strong>Movement</strong>: IMU-based motion tracking</li>
+                    <li><strong>Ambient</strong>: Temperature, pressure, and environmental sensing</li>
+                </ul>
+                
+                <div class="figure">
+                    <img src="https://ub-escgroup.github.io/ai-heartech/images/observables.png" alt="Observable Physical Characteristics">
+                    <figcaption>Observable Physical Characteristics for Health Monitoring</figcaption>
+                </div>
+                
+                <p>Alexander highlighted several physiological characteristics that can be monitored with these modalities, including:</p>
+                
+                <ul>
+                    <li>Eye measurements (pupil size, ERG, gaze)</li>
+                    <li>Heart activity (BPM, ECG, PPG)</li>
+                    <li>Brain activity (EEG)</li>
+                    <li>Muscle activity (EMG, EIT)</li>
+                    <li>Skin properties (tissue spectra, moisture, temperature)</li>
+                </ul>
+            </div>
+            
+            <div class="session-section">
+                <h2>Data Preprocessing Techniques</h2>
+                <p>A significant portion of the presentation focused on preprocessing techniques essential for effective health monitoring systems:</p>
+                
+                <ul>
+                    <li><strong>Frequency Filtering</strong>: High-pass, low-pass, band-pass, and band-stop filters</li>
+                    <li><strong>Blind Source Separation</strong>: PCA and ICA for isolating signals from noise</li>
+                    <li><strong>Beamforming</strong>: Directional signal processing (analogous to "pointing the ear")</li>
+                    <li><strong>Statistical Approaches</strong>: Moving averages, Wiener filters, and spectral estimation</li>
+                </ul>
+                
+                <div class="figure">
+                    <img src="https://ub-escgroup.github.io/ai-heartech/images/normalization.png" alt="Data Normalization Approaches">
+                    <figcaption>Data Normalization Approaches for Consistent Learning</figcaption>
+                </div>
+                
+                <p>Alexander emphasized the importance of normalization in preparing data for AI systems, discussing various approaches including max normalization, min-max scaling, and z-standardization. He noted that normalization provides the consistency necessary for effective machine learning, especially when absolute scale is less important than relative patterns.</p>
+            </div>
+            
+            <div class="session-section">
+                <h2>Machine Learning Approaches</h2>
+                <p>The presentation covered the spectrum of machine learning approaches relevant to audiology applications:</p>
+                
+                <h3>Machine Learning vs. Deep Learning</h3>
+                <p>Alexander differentiated between traditional machine learning and deep learning approaches:</p>
+                <ul>
+                    <li><strong>Traditional ML</strong>: Engineers define simple features, and models learn relationships between these features and targets</li>
+                    <li><strong>Deep Learning</strong>: Multi-layered networks learn features and their relationships simultaneously, enabling direct mapping from raw inputs to desired outputs</li>
+                </ul>
+                
+                <h3>Supervised vs. Unsupervised Learning</h3>
+                <p>The discussion included various learning paradigms:</p>
+                <ul>
+                    <li><strong>Supervised Learning</strong>: Models trained with labeled data (95% of health applications)</li>
+                    <li><strong>Unsupervised Learning</strong>: Pattern discovery in unlabeled data</li>
+                    <li><strong>Hybrid Approaches</strong>: Combining unsupervised methods for understanding data structure with supervised techniques for targeted outcomes</li>
+                </ul>
+                
+                <h3>Reinforcement Learning for Adaptive Systems</h3>
+                <p>Alexander introduced reinforcement learning as a promising approach for audiology applications, particularly for adaptive sound therapy:</p>
+                
+                <div class="figure">
+                    <img src="https://ub-escgroup.github.io/ai-heartech/images/reinforcement.png" alt="Reinforcement Learning Framework">
+                    <figcaption>Reinforcement Learning Framework for Adaptive Sound Therapy</figcaption>
+                </div>
+                
+                <ul>
+                    <li>Systems learn through reward-based feedback</li>
+                    <li>Particularly useful for optimizing sequences of decisions with long-term outcomes</li>
+                    <li>Applicable to personalized tinnitus treatment through sound stimulation</li>
+                </ul>
+            </div>
+            
+            <div class="session-section">
+                <h2>Discussion: Applications in Audiology</h2>
+                <p>The presentation sparked rich discussion about potential applications in audiology:</p>
+                
+                <h3>Tinnitus Treatment System</h3>
+                <p>Dr. Wei Sun proposed developing a comprehensive tinnitus management system incorporating:</p>
+                <ul>
+                    <li>Matching algorithms to characterize individual tinnitus profiles</li>
+                    <li>Adaptive sound generation using reinforcement learning</li>
+                    <li>Monitoring tools to track treatment efficacy</li>
+                </ul>
+                
+                <p>Elizabeth clarified that current tinnitus noise generators primarily aim to distract rather than mask, emphasizing the need for nuanced approaches to sound therapy.</p>
+                
+                <h3>Objective Response Measurement</h3>
+                <p>The group discussed using multiple sensor types to objectively measure patient responses to audio stimuli:</p>
+                <ul>
+                    <li>EEG for neural response characterization</li>
+                    <li>Heart rate and galvanic skin response for discomfort assessment</li>
+                    <li>Pupillometry for cognitive effort measurement</li>
+                </ul>
+                
+                <h3>Over-the-Counter Hearing Aid Programming</h3>
+                <p>The team explored how AI could enhance self-fitting of OTC hearing aids:</p>
+                <ul>
+                    <li>Noise-canceling technology to improve testing accuracy</li>
+                    <li>Algorithms for appropriate gain selection based on user feedback</li>
+                    <li>Virtual environments to simulate real-world listening conditions</li>
+                </ul>
+            </div>
+            
+            <div class="session-section">
+                <h2>Next Steps</h2>
+                <ul>
+                    <li>Research team to develop a prototype for tinnitus simulation and treatment software and to investigate the potential of using reinforcement learning for adaptive tinnitus sound therapy</li>
+                    <li>Elizabeth to provide input on integrating noise-canceling technology into hearing aid self-tests</li>
+                    <li>Research team to explore the application of AI in over-the-counter hearing aid programming and fitting</li>
+                    <li>Research team to consider incorporating EEG or other physiological signals to objectively measure patient response to tinnitus treatments</li>
+                </ul>
+            </div>
+            
+            <div class="session-section">
+                <h2>Future Directions</h2>
+                <p>The workshop identified several promising research avenues at the intersection of cyber physical systems and audiology:</p>
+                <ol>
+                    <li><strong>Multimodal Sensing</strong>: Combining acoustic, physiological, and behavioral measurements for comprehensive assessment</li>
+                    <li><strong>Reinforcement Learning</strong>: Developing adaptive algorithms for personalized sound therapy optimization</li>
+                    <li><strong>Miniaturization</strong>: Creating wearable, unobtrusive monitoring solutions for continuous assessment</li>
+                    <li><strong>Hybrid Learning Models</strong>: Using advanced AI approaches that reduce dependence on large labeled datasets</li>
+                </ol>
+                
+                <p>The next workshop is scheduled for two weeks later and will focus on the integration of these concepts into practical applications for hearing health care.</p>
+            </div>
+        </div>
+        
+        <div class="session-card">
+            <div class="session-header">
+                Next Session: March 17, 2025
+            </div>
+            <div class="session-content">
+                <div class="session-meta">
+                    <span><strong>Presenter:</strong> Elizabeth Rivera Rosario, AuD</span>
+                    <span><strong>Affiliation:</strong> Doctoral Student, Department of Communicative Disorders and Sciences, University at Buffalo</span>
+                </div>
+                <p>Join us for a presentation on advanced audiology topics with AI support.</p>
+                <a href="index.html#schedule">View Full Schedule</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI for HearTech Seminar Series. All rights reserved.</p>
+            <p>University at Buffalo</p>
+            <p><a href="index.html#contact">Contact</a> | <a href="index.html#about">About</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for HearTech Seminar Series</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .intro {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .upcoming-session {
+            background-color: var(--light-color);
+            border-left: 5px solid var(--accent-color);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .session-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .session-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem;
+            font-weight: bold;
+        }
+        
+        .session-content {
+            padding: 1.5rem;
+        }
+        
+        .session-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .presenter {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .presenter img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+        
+        .presenter-info h4 {
+            margin: 0;
+            color: var(--dark-color);
+        }
+        
+        .presenter-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .participants {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .participant {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .participant img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        
+        .summary {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .session-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI for HearTech Seminar Series</h1>
+            <p>Exploring cutting-edge applications of artificial intelligence in hearing technology</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>About Our Seminar</h2>
+            <p>Welcome to the AI for HearTech Seminar Series, where researchers, students, and industry professionals come together to explore the intersection of artificial intelligence and hearing technology. Each week, we feature a presentation on a specific topic, followed by discussions and insights from participants.</p>
+            <p>Join us every Wednesday at 3:00 PM in Room 302, Engineering Building.</p>
+        </section>
+        
+        <section class="upcoming-session">
+            <h3>⭐ Upcoming Session</h3>
+            <p><strong>Date:</strong> March 19, 2025</p>
+            <p><strong>Topic:</strong> Neural Networks for Speech Enhancement in Hearing Aids</p>
+            <p><strong>Presenter:</strong> Dr. Jane Smith</p>
+        </section>
+        
+        <h2>Seminar Schedule</h2>
+        
+        <div class="session-card">
+            <div class="session-header">
+                Week 1: Machine Learning Basics for Hearing Technology
+            </div>
+            <div class="session-content">
+                <div class="session-meta">
+                    <span><strong>Date:</strong> March 12, 2025</span>
+                    <span><strong>Time:</strong> 3:00 PM - 4:30 PM</span>
+                    <span><strong>Location:</strong> Room 302, Engineering Building</span>
+                </div>
+                
+                <div class="presenter">
+                    <img src="/api/placeholder/400/400" alt="Presenter photo">
+                    <div class="presenter-info">
+                        <h4>Dr. John Doe</h4>
+                        <p>Professor of AI & Audiology, University of Technology</p>
+                    </div>
+                </div>
+                
+                <h4>Participants</h4>
+                <div class="participants">
+                    <div class="participant">
+                        <img src="/api/placeholder/400/400" alt="Participant photo">
+                        <span>Emily Chen</span>
+                    </div>
+                    <div class="participant">
+                        <img src="/api/placeholder/400/400" alt="Participant photo">
+                        <span>Michael Johnson</span>
+                    </div>
+                    <div class="participant">
+                        <img src="/api/placeholder/400/400" alt="Participant photo">
+                        <span>Sarah Williams</span>
+                    </div>
+                    <div class="participant">
+                        <img src="/api/placeholder/400/400" alt="Participant photo">
+                        <span>Robert Brown</span>
+                    </div>
+                </div>
+                
+                <h4>Summary</h4>
+                <div class="summary">
+                    <p>This introductory session covered the fundamental concepts of machine learning and their applications in hearing technology. Dr. Doe presented an overview of supervised and unsupervised learning methods, feature extraction techniques, and how these can be applied to improve hearing aid performance. Participants discussed current challenges in the field and potential research directions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="session-card">
+            <div class="session-header">
+                Week 2: Neural Networks for Speech Enhancement in Hearing Aids
+            </div>
+            <div class="session-content">
+                <div class="session-meta">
+                    <span><strong>Date:</strong> March 19, 2025</span>
+                    <span><strong>Time:</strong> 3:00 PM - 4:30 PM</span>
+                    <span><strong>Location:</strong> Room 302, Engineering Building</span>
+                </div>
+                
+                <div class="presenter">
+                    <img src="/api/placeholder/400/400" alt="Presenter photo">
+                    <div class="presenter-info">
+                        <h4>Dr. Jane Smith</h4>
+                        <p>Lead AI Researcher, HearTech Innovations</p>
+                    </div>
+                </div>
+                
+                <h4>Participants</h4>
+                <div class="participants">
+                    <div class="participant">
+                        <img src="/api/placeholder/400/400" alt="Participant photo">
+                        <span>David Lee</span>
+                    </div>
+                    <div class="participant">
+                        <img src="/api/placeholder/400/400" alt="Participant photo">
+                        <span>Lisa Garcia</span>
+                    </div>
+                    <div class="participant">
+                        <img src="/api/placeholder/400/400" alt="Participant photo">
+                        <span>Kevin Taylor</span>
+                    </div>
+                </div>
+                
+                <h4>Summary</h4>
+                <div class="summary">
+                    <p>Session details will be updated after the presentation.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Future Topics</h2>
+        <ul>
+            <li>Deep Learning for Noise Reduction in Challenging Environments</li>
+            <li>Real-time Sound Classification for Situational Awareness</li>
+            <li>Personalized Hearing Solutions through Reinforcement Learning</li>
+            <li>Natural Language Processing for Hearing Assistive Devices</li>
+            <li>Computer Vision Integration for Multi-modal Hearing Support</li>
+            <li>Ethics and Privacy Considerations in AI-powered Hearing Technology</li>
+        </ul>
+        
+        <h2>Join Our Seminar</h2>
+        <p>If you're interested in presenting or participating in our seminar series, please contact the organizer at <a href="mailto:organizer@heartech-seminar.edu">organizer@heartech-seminar.edu</a>.</p>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI for HearTech Seminar Series. All rights reserved.</p>
+            <p>Department of Audiology & AI Research</p>
+        </div>
+    </footer>
+</body>
+</html>
