@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEG in Audiology Research: Brain Signal Analysis and AI Applications - AI for HearTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">AI for HearTech</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#resources">Resources</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>EEG in Audiology Research: Brain Signal Analysis and AI Applications</h1>
+            <p>March 31, 2025 - Presented by Anarghya Das</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="session-details">
+            <div><strong>Date:</strong> March 31, 2025</div>
+            <div><strong>Presenter:</strong> Anarghya Das</div>
+            <div><strong>Affiliation:</strong> Doctoral Student, Department of Computer Science & Engineering, University at Buffalo</div>
+            <div><strong>Topic:</strong> EEG in Audiology Research</div>
+        </div>
+        
+        <div class="session-container">
+            <div class="session-section">
+                <h2>Session Overview</h2>
+                <p>Our fifth Audiology Workshop featured Anarghya Das, a doctoral student in the Department of Computer Science and Engineering at the University at Buffalo. This session explored the applications of electroencephalography (EEG) in audiology research, with a focus on brain signal analysis techniques and the potential for AI integration in EEG data processing and interpretation.</p>
+                
+                <p>Anarghya presented a comprehensive overview of brain signals and EEG methods, discussing various approaches to measuring neural activity and highlighting the potential for machine learning to automate feature extraction in EEG data analysis. The presentation sparked engaging discussions about multi-channel EEG applications in clinical audiology and the development of user-friendly tools for analysis.</p>
+            </div>
+            
+            <div class="session-section">
+                <h2>Brain Signal Measurement Techniques</h2>
+                <p>Anarghya began with an introduction to different methods of measuring brain activity, with a particular focus on non-invasive electroencephalography (EEG) techniques:</p>
+                
+                <div class="figure">
+                    <img src="images/EEG_electrode_placement.png" alt="EEG Electrode Placement">
+                    <figcaption>Standard EEG Electrode Placement Following the International 10-20 System</figcaption>
+                </div>
+                
+                <p>The presentation explained several key aspects of EEG technology:</p>
+                <ul>
+                    <li>Electrode types and placement standards</li>
+                    <li>Signal acquisition parameters and sampling rates</li>
+                    <li>Common reference schemes and their implications</li>
+                    <li>Considerations for auditory evoked potential recording</li>
+                </ul>
+                
+                <div class="figure">
+                    <img src="images/around_ear_eeg_electrodes.jpg" alt="Around-Ear EEG Electrodes">
+                    <figcaption>Around-Ear EEG Electrode Systems for Comfortable Long-Term Monitoring</figcaption>
+                </div>
+            </div>
+            
+            <div class="session-section">
+                <h2>EEG Signal Processing Pipeline</h2>
+                <p>Anarghya outlined the complete workflow for EEG signal analysis in audiology applications:</p>
+                
+                <div class="figure">
+                    <img src="images/signal_aquisition_pipeline.png" alt="Signal Acquisition Pipeline">
+                    <figcaption>EEG Signal Acquisition and Processing Pipeline for Audiology Applications</figcaption>
+                </div>
+                
+                <p>The workflow includes several critical stages:</p>
+                <ol>
+                    <li><strong>Signal Acquisition:</strong> Recording raw EEG data with appropriate hardware</li>
+                    <li><strong>Preprocessing:</strong> Filtering, artifact removal, and signal cleaning</li>
+                    <li><strong>Feature Extraction:</strong> Identifying meaningful features in time, frequency, or time-frequency domains</li>
+                    <li><strong>Analysis:</strong> Applying statistical or machine learning methods to extract insights</li>
+                </ol>
+                
+                <p>For preprocessing specifically, Anarghya discussed various digital signal filtering approaches:</p>
+                
+                <div class="figure">
+                    <img src="images/types_of_digital_signal_filters.png" alt="Digital Signal Filters">
+                    <figcaption>Common Types of Digital Signal Filters Used in EEG Preprocessing</figcaption>
+                </div>
+            </div>
+            
+            <div class="session-section">
+                <h2>Multi-Channel EEG in Audiology</h2>
+                <p>A significant portion of the discussion focused on the potential advantages of multi-channel EEG recording in audiology applications:</p>
+                
+                <div class="figure">
+                    <img src="images/Raw_eeg_signal_from_multiple_channels.png" alt="Multi-channel EEG Signal">
+                    <figcaption>Raw EEG Signal Recorded Simultaneously from Multiple Channels</figcaption>
+                </div>
+                
+                <p>Wei Sun explained that current auditory evoked potential tests in clinical settings typically use only a single channel, which limits spatial information about brain activity. The group discussed how multi-channel approaches could provide richer insights:</p>
+                
+                <ul>
+                    <li>Enhanced localization of auditory processing</li>
+                    <li>Better separation of different signal sources</li>
+                    <li>Improved detection of subtle hearing impairments</li>
+                    <li>More robust data for machine learning applications</li>
+                </ul>
+                
+                <p>The team explored the feasibility of developing user-friendly software for multi-channel auditory evoked potential equipment that could enhance clinical utility while remaining accessible to practitioners without extensive technical expertise.</p>
+            </div>
+            
+            <div class="session-section">
+                <h2>AI and Deep Learning for EEG Analysis</h2>
+                <p>Anarghya presented on the potential for artificial intelligence to transform EEG data analysis in audiology:</p>
+                
+                <div class="figure">
+                    <img src="images/end-to-end_DL_approach_to_MI-EEG_signal_classification_for_BCI.png" alt="Deep Learning for EEG">
+                    <figcaption>End-to-End Deep Learning Approach to EEG Signal Classification</figcaption>
+                </div>
+                
+                <p>The discussion highlighted several key advantages of AI-based approaches:</p>
+                <ul>
+                    <li><strong>Automatic Feature Extraction:</strong> Reducing the need for manual identification of relevant signal characteristics</li>
+                    <li><strong>Pattern Recognition:</strong> Identifying subtle patterns that might not be apparent through traditional analysis</li>
+                    <li><strong>Classification:</strong> Differentiating between normal and pathological signals with high accuracy</li>
+                    <li><strong>Personalization:</strong> Adapting to individual variations in brain responses</li>
+                </ul>
+                
+                <p>The team discussed existing tools like EEG Toolbox and MNE Python for visualizing and processing multi-channel EEG data, but noted that deep learning applications may require more specialized technical knowledge. This sparked a conversation about developing more accessible tools that could integrate AI capabilities without extensive coding requirements.</p>
+            </div>
+            
+            <div class="session-section">
+                <h2>Clinical Applications in Audiology</h2>
+                <p>The session included valuable input from audiology professionals about potential clinical applications:</p>
+                
+                <h3>ADHD and Pediatric Applications</h3>
+                <p>Rania explained that EEG-based testing can be particularly valuable for:</p>
+                <ul>
+                    <li>Patients with ADHD who cannot sit still for conventional hearing tests</li>
+                    <li>Children under 6 years old who cannot perform visual reinforcement audiometry</li>
+                    <li>Cases where there is suspicion of non-organic hearing loss</li>
+                </ul>
+                
+                <h3>Beyond Standard Evoked Potentials</h3>
+                <p>The team discussed extending analysis beyond the traditional P100 component:</p>
+                <ul>
+                    <li>Training AI to analyze multiple wave components</li>
+                    <li>Developing metrics for latency and amplitude variations</li>
+                    <li>Creating comprehensive profiles of auditory processing</li>
+                </ul>
+                
+                <h3>Tinnitus Assessment Challenges</h3>
+                <p>The group discussed the difficulties in identifying tinnitus-specific patterns in EEG signals and explored the potential for developing more sensitive analysis methods through machine learning approaches.</p>
+            </div>
+            
+            <div class="session-section">
+                <h2>Next Steps</h2>
+                <ul>
+                    <li>Anarghya to explore tools that can integrate deep learning networks for EEG analysis without extensive coding requirements</li>
+                    <li>Dr. Sun to investigate the possibility of developing a multi-channel auditory evoked potential equipment for clinical use</li>
+                    <li>Wei to invite Shuwei to present on LLM at a future session</li>
+                    <li>Dr. Sun to schedule an in-person meeting for the group in early May after the semester ends</li>
+                </ul>
+            </div>
+            
+            <div class="session-section">
+                <h2>Future Directions</h2>
+                <p>The workshop identified several promising research directions at the intersection of EEG analysis and audiology:</p>
+                <ol>
+                    <li><strong>Clinical Tool Development:</strong> Creating user-friendly software that incorporates AI for EEG analysis in audiology clinics</li>
+                    <li><strong>Multi-Modal Integration:</strong> Combining EEG with other assessment methods for comprehensive hearing evaluation</li>
+                    <li><strong>Real-Time Processing:</strong> Developing systems for immediate feedback during auditory testing</li>
+                    <li><strong>Patient-Specific Models:</strong> Training personalized AI models that account for individual variations in brain activity</li>
+                </ol>
+                
+                <p>This interdisciplinary approach highlights the potential for AI to transform audiology practices while maintaining the critical expertise of clinical professionals.</p>
+            </div>
+        </div>
+        
+        <div class="session-card">
+            <div class="session-header">
+                <h3>Next Session: Applications of Large Language Models in Healthcare</h3>
+            </div>
+            <div class="session-content">
+                <div class="session-meta">
+                    <span><strong>Date:</strong> April 14, 2025</span>
+                    <span><strong>Time:</strong> 4:00 PM - 5:00 PM (EST)</span>
+                    <span><strong>Location:</strong> Online (Zoom) </span>
+                </div>
+                
+                <div class="presenter">
+                    <img src="images/Presenter_ShuweiHou.jpg" alt="Presenter photo">
+                    <div class="presenter-info">
+                        <h4>Shuwei Hou</h4>
+                        <p>PhD Student, Department of Computer Science & Engineering, University at Buffalo</p>
+                    </div>
+                </div>
+                
+                <p>Join us for a presentation on applications of Large Language Models in healthcare settings.</p>
+                <a href="index.html#schedule">View Full Schedule</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI for HearTech Seminar Series. All rights reserved.</p>
+            <p>University at Buffalo</p>
+            <p><a href="index.html#contact">Contact</a> | <a href="index.html#about">About</a></p>
+        </div>
+    </footer>
+</body>
+</html>
